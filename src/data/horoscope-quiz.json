@@ -1,0 +1,148 @@
+{
+  "id": "horoscope",
+  "title": "Descubra seu Signo",
+  "description": "Informe sua data de nascimento e descubra seu signo do zodíaco",
+  "theme": "horoscope",
+  "questions": [
+    {
+      "id": "birth_month",
+      "text": "Em qual mês você nasceu?",
+      "type": "single_choice",
+      "options": [
+        { "id": "1", "label": "Janeiro", "value": 1 },
+        { "id": "2", "label": "Fevereiro", "value": 2 },
+        { "id": "3", "label": "Março", "value": 3 },
+        { "id": "4", "label": "Abril", "value": 4 },
+        { "id": "5", "label": "Maio", "value": 5 },
+        { "id": "6", "label": "Junho", "value": 6 },
+        { "id": "7", "label": "Julho", "value": 7 },
+        { "id": "8", "label": "Agosto", "value": 8 },
+        { "id": "9", "label": "Setembro", "value": 9 },
+        { "id": "10", "label": "Outubro", "value": 10 },
+        { "id": "11", "label": "Novembro", "value": 11 },
+        { "id": "12", "label": "Dezembro", "value": 12 }
+      ]
+    },
+    {
+      "id": "birth_day",
+      "text": "Em qual dia?",
+      "type": "day_of_month",
+      "dependsOn": "birth_month"
+    }
+  ],
+  "resultResolver": {
+    "type": "zodiac",
+    "ranges": [
+      { "sign": "capricorn",  "startMonth": 12, "startDay": 22, "endMonth": 1,  "endDay": 19 },
+      { "sign": "aquarius",   "startMonth": 1,  "startDay": 20, "endMonth": 2,  "endDay": 18 },
+      { "sign": "pisces",     "startMonth": 2,  "startDay": 19, "endMonth": 3,  "endDay": 20 },
+      { "sign": "aries",      "startMonth": 3,  "startDay": 21, "endMonth": 4,  "endDay": 19 },
+      { "sign": "taurus",     "startMonth": 4,  "startDay": 20, "endMonth": 5,  "endDay": 20 },
+      { "sign": "gemini",     "startMonth": 5,  "startDay": 21, "endMonth": 6,  "endDay": 20 },
+      { "sign": "cancer",     "startMonth": 6,  "startDay": 21, "endMonth": 7,  "endDay": 22 },
+      { "sign": "leo",        "startMonth": 7,  "startDay": 23, "endMonth": 8,  "endDay": 22 },
+      { "sign": "virgo",      "startMonth": 8,  "startDay": 23, "endMonth": 9,  "endDay": 22 },
+      { "sign": "libra",      "startMonth": 9,  "startDay": 23, "endMonth": 10, "endDay": 22 },
+      { "sign": "scorpio",    "startMonth": 10, "startDay": 23, "endMonth": 11, "endDay": 21 },
+      { "sign": "sagittarius","startMonth": 11, "startDay": 22, "endMonth": 12, "endDay": 21 }
+    ]
+  },
+  "results": {
+    "capricorn": {
+      "title": "Capricórnio",
+      "symbol": "♑",
+      "element": "Terra",
+      "period": "22/12 — 19/01",
+      "description": "Disciplinado, ambicioso e responsável. Capricornianos são determinados e trabalham duro para alcançar seus objetivos. Possuem uma natureza prática e são excelentes em planejar o futuro.",
+      "traits": ["Disciplinado", "Ambicioso", "Paciente", "Pragmático"]
+    },
+    "aquarius": {
+      "title": "Aquário",
+      "symbol": "♒",
+      "element": "Ar",
+      "period": "20/01 — 18/02",
+      "description": "Inovador, independente e visionário. Aquarianos são pensadores originais que valorizam a liberdade e a individualidade. São humanitários por natureza e sempre buscam tornar o mundo melhor.",
+      "traits": ["Inovador", "Independente", "Humanitário", "Original"]
+    },
+    "pisces": {
+      "title": "Peixes",
+      "symbol": "♓",
+      "element": "Água",
+      "period": "19/02 — 20/03",
+      "description": "Intuitivo, sensível e compassivo. Piscianos são sonhadores que possuem uma conexão profunda com suas emoções e com o mundo espiritual. São extremamente empáticos e criativos.",
+      "traits": ["Intuitivo", "Empático", "Criativo", "Sensível"]
+    },
+    "aries": {
+      "title": "Áries",
+      "symbol": "♈",
+      "element": "Fogo",
+      "period": "21/03 — 19/04",
+      "description": "Corajoso, energético e pioneiro. Arianos são líderes natos que não têm medo de enfrentar desafios. Possuem uma energia contagiante e são sempre os primeiros a agir.",
+      "traits": ["Corajoso", "Energético", "Determinado", "Confiante"]
+    },
+    "taurus": {
+      "title": "Touro",
+      "symbol": "♉",
+      "element": "Terra",
+      "period": "20/04 — 20/05",
+      "description": "Paciente, confiável e dedicado. Taurinos valorizam a estabilidade e o conforto. São pessoas leais e persistentes que apreciam as coisas boas da vida.",
+      "traits": ["Paciente", "Confiável", "Persistente", "Leal"]
+    },
+    "gemini": {
+      "title": "Gêmeos",
+      "symbol": "♊",
+      "element": "Ar",
+      "period": "21/05 — 20/06",
+      "description": "Versátil, comunicativo e curioso. Geminianos são intelectuais que adoram aprender e compartilhar conhecimento. Possuem uma mente ágil e são excelentes comunicadores.",
+      "traits": ["Versátil", "Comunicativo", "Curioso", "Intelectual"]
+    },
+    "cancer": {
+      "title": "Câncer",
+      "symbol": "♋",
+      "element": "Água",
+      "period": "21/06 — 22/07",
+      "description": "Protetor, intuitivo e leal. Cancerianos são profundamente ligados à família e ao lar. Possuem uma sensibilidade especial e cuidam intensamente das pessoas que amam.",
+      "traits": ["Protetor", "Intuitivo", "Leal", "Carinhoso"]
+    },
+    "leo": {
+      "title": "Leão",
+      "symbol": "♌",
+      "element": "Fogo",
+      "period": "23/07 — 22/08",
+      "description": "Criativo, generoso e líder nato. Leoninos possuem um carisma natural e adoram estar no centro das atenções. São apaixonados e extremamente generosos com quem amam.",
+      "traits": ["Criativo", "Generoso", "Carismático", "Apaixonado"]
+    },
+    "virgo": {
+      "title": "Virgem",
+      "symbol": "♍",
+      "element": "Terra",
+      "period": "23/08 — 22/09",
+      "description": "Analítico, meticuloso e prestativo. Virginianos são perfeccionistas que se dedicam a melhorar tudo ao seu redor. Possuem uma mente analítica e são extremamente organizados.",
+      "traits": ["Analítico", "Organizado", "Prestativo", "Meticuloso"]
+    },
+    "libra": {
+      "title": "Libra",
+      "symbol": "♎",
+      "element": "Ar",
+      "period": "23/09 — 22/10",
+      "description": "Diplomático, justo e sociável. Librianos buscam equilíbrio e harmonia em todas as áreas da vida. São excelentes mediadores e possuem um senso estético apurado.",
+      "traits": ["Diplomático", "Justo", "Harmonioso", "Sociável"]
+    },
+    "scorpio": {
+      "title": "Escorpião",
+      "symbol": "♏",
+      "element": "Água",
+      "period": "23/10 — 21/11",
+      "description": "Intenso, perspicaz e apaixonado. Escorpianos possuem uma profundidade emocional única e são extremamente leais. São determinados e não descansam até atingir seus objetivos.",
+      "traits": ["Intenso", "Perspicaz", "Determinado", "Leal"]
+    },
+    "sagittarius": {
+      "title": "Sagitário",
+      "symbol": "♐",
+      "element": "Fogo",
+      "period": "22/11 — 21/12",
+      "description": "Otimista, aventureiro e filosófico. Sagitarianos são exploradores natos que buscam conhecimento e experiências. Possuem um espírito livre e um senso de humor contagiante.",
+      "traits": ["Otimista", "Aventureiro", "Filosófico", "Livre"]
+    }
+  }
+}
