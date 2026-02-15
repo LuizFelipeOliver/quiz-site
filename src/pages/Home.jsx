@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import horoscopeQuiz from "../data/horoscope-quiz.json";
+import reverseHoroscopeQuiz from "../data/reverse-horoscope-quiz.json";
 
-const quizzes = [horoscopeQuiz];
+const quizzes = [horoscopeQuiz, reverseHoroscopeQuiz];
 
 const THEME_STYLES = {
   horoscope: {

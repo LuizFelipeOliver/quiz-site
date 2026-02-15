@@ -1,9 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import QuizRenderer from "../components/QuizRenderer";
 import horoscopeQuiz from "../data/horoscope-quiz.json";
+import reverseHoroscopeQuiz from "../data/reverse-horoscope-quiz.json";
 
 const quizzesMap = {
   [horoscopeQuiz.id]: horoscopeQuiz,
+  [reverseHoroscopeQuiz.id]: reverseHoroscopeQuiz,
 };
 
 export default function Quiz() {

@@ -1,0 +1,125 @@
+{
+  "id": "reverse-horoscope",
+  "title": "Qual mês você nasceu?",
+  "description": "Diga seu signo e descubra em qual período você nasceu",
+  "theme": "horoscope",
+  "questions": [
+    {
+      "id": "sign",
+      "text": "Qual é o seu signo?",
+      "type": "single_choice",
+      "options": [
+        { "id": "aries",       "label": "♈ Áries",       "value": "aries" },
+        { "id": "taurus",      "label": "♉ Touro",       "value": "taurus" },
+        { "id": "gemini",      "label": "♊ Gêmeos",      "value": "gemini" },
+        { "id": "cancer",      "label": "♋ Câncer",      "value": "cancer" },
+        { "id": "leo",         "label": "♌ Leão",        "value": "leo" },
+        { "id": "virgo",       "label": "♍ Virgem",      "value": "virgo" },
+        { "id": "libra",       "label": "♎ Libra",       "value": "libra" },
+        { "id": "scorpio",     "label": "♏ Escorpião",   "value": "scorpio" },
+        { "id": "sagittarius", "label": "♐ Sagitário",   "value": "sagittarius" },
+        { "id": "capricorn",   "label": "♑ Capricórnio", "value": "capricorn" },
+        { "id": "aquarius",    "label": "♒ Aquário",     "value": "aquarius" },
+        { "id": "pisces",      "label": "♓ Peixes",      "value": "pisces" }
+      ]
+    }
+  ],
+  "results": {
+    "aries": {
+      "title": "Março / Abril",
+      "symbol": "♈",
+      "element": "Fogo",
+      "period": "21 de Março — 19 de Abril",
+      "description": "Você nasceu entre 21 de março e 19 de abril. Arianos são regidos por Marte, o planeta da ação e da energia. Seu elemento é o Fogo, trazendo paixão e iniciativa para tudo que fazem.",
+      "traits": ["Marte", "Fogo", "Cardeal", "Primavera"]
+    },
+    "taurus": {
+      "title": "Abril / Maio",
+      "symbol": "♉",
+      "element": "Terra",
+      "period": "20 de Abril — 20 de Maio",
+      "description": "Você nasceu entre 20 de abril e 20 de maio. Taurinos são regidos por Vênus, o planeta do amor e da beleza. Seu elemento é a Terra, trazendo estabilidade e praticidade.",
+      "traits": ["Vênus", "Terra", "Fixo", "Primavera"]
+    },
+    "gemini": {
+      "title": "Maio / Junho",
+      "symbol": "♊",
+      "element": "Ar",
+      "period": "21 de Maio — 20 de Junho",
+      "description": "Você nasceu entre 21 de maio e 20 de junho. Geminianos são regidos por Mercúrio, o planeta da comunicação. Seu elemento é o Ar, trazendo versatilidade e curiosidade intelectual.",
+      "traits": ["Mercúrio", "Ar", "Mutável", "Primavera"]
+    },
+    "cancer": {
+      "title": "Junho / Julho",
+      "symbol": "♋",
+      "element": "Água",
+      "period": "21 de Junho — 22 de Julho",
+      "description": "Você nasceu entre 21 de junho e 22 de julho. Cancerianos são regidos pela Lua, o astro das emoções e da intuição. Seu elemento é a Água, trazendo sensibilidade e proteção.",
+      "traits": ["Lua", "Água", "Cardeal", "Verão"]
+    },
+    "leo": {
+      "title": "Julho / Agosto",
+      "symbol": "♌",
+      "element": "Fogo",
+      "period": "23 de Julho — 22 de Agosto",
+      "description": "Você nasceu entre 23 de julho e 22 de agosto. Leoninos são regidos pelo Sol, o astro da vitalidade e do brilho. Seu elemento é o Fogo, trazendo criatividade e liderança natural.",
+      "traits": ["Sol", "Fogo", "Fixo", "Verão"]
+    },
+    "virgo": {
+      "title": "Agosto / Setembro",
+      "symbol": "♍",
+      "element": "Terra",
+      "period": "23 de Agosto — 22 de Setembro",
+      "description": "Você nasceu entre 23 de agosto e 22 de setembro. Virginianos são regidos por Mercúrio, o planeta da análise e da organização. Seu elemento é a Terra, trazendo precisão e dedicação.",
+      "traits": ["Mercúrio", "Terra", "Mutável", "Verão"]
+    },
+    "libra": {
+      "title": "Setembro / Outubro",
+      "symbol": "♎",
+      "element": "Ar",
+      "period": "23 de Setembro — 22 de Outubro",
+      "description": "Você nasceu entre 23 de setembro e 22 de outubro. Librianos são regidos por Vênus, o planeta da harmonia e das relações. Seu elemento é o Ar, trazendo equilíbrio e diplomacia.",
+      "traits": ["Vênus", "Ar", "Cardeal", "Outono"]
+    },
+    "scorpio": {
+      "title": "Outubro / Novembro",
+      "symbol": "♏",
+      "element": "Água",
+      "period": "23 de Outubro — 21 de Novembro",
+      "description": "Você nasceu entre 23 de outubro e 21 de novembro. Escorpianos são regidos por Plutão, o planeta da transformação. Seu elemento é a Água, trazendo intensidade e profundidade emocional.",
+      "traits": ["Plutão", "Água", "Fixo", "Outono"]
+    },
+    "sagittarius": {
+      "title": "Novembro / Dezembro",
+      "symbol": "♐",
+      "element": "Fogo",
+      "period": "22 de Novembro — 21 de Dezembro",
+      "description": "Você nasceu entre 22 de novembro e 21 de dezembro. Sagitarianos são regidos por Júpiter, o planeta da expansão e da sabedoria. Seu elemento é o Fogo, trazendo aventura e otimismo.",
+      "traits": ["Júpiter", "Fogo", "Mutável", "Outono"]
+    },
+    "capricorn": {
+      "title": "Dezembro / Janeiro",
+      "symbol": "♑",
+      "element": "Terra",
+      "period": "22 de Dezembro — 19 de Janeiro",
+      "description": "Você nasceu entre 22 de dezembro e 19 de janeiro. Capricornianos são regidos por Saturno, o planeta da disciplina e da estrutura. Seu elemento é a Terra, trazendo ambição e responsabilidade.",
+      "traits": ["Saturno", "Terra", "Cardeal", "Inverno"]
+    },
+    "aquarius": {
+      "title": "Janeiro / Fevereiro",
+      "symbol": "♒",
+      "element": "Ar",
+      "period": "20 de Janeiro — 18 de Fevereiro",
+      "description": "Você nasceu entre 20 de janeiro e 18 de fevereiro. Aquarianos são regidos por Urano, o planeta da inovação e da revolução. Seu elemento é o Ar, trazendo originalidade e visão de futuro.",
+      "traits": ["Urano", "Ar", "Fixo", "Inverno"]
+    },
+    "pisces": {
+      "title": "Fevereiro / Março",
+      "symbol": "♓",
+      "element": "Água",
+      "period": "19 de Fevereiro — 20 de Março",
+      "description": "Você nasceu entre 19 de fevereiro e 20 de março. Piscianos são regidos por Netuno, o planeta dos sonhos e da espiritualidade. Seu elemento é a Água, trazendo intuição e compaixão.",
+      "traits": ["Netuno", "Água", "Mutável", "Inverno"]
+    }
+  }
+}
